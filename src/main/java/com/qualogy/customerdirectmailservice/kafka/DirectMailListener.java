@@ -8,7 +8,7 @@ public class DirectMailListener {
 
     @KafkaListener(topics = "quickstart-events")
     public void listenForDirectMail(String message) {
-        System.out.println("Received Message in group foo: " + message);
+        System.out.println("Received Message: " + message);
     }
 }
 
